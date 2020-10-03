@@ -6,7 +6,6 @@ import (
 	"net"
 	"net/http"
 	"net/rpc"
-	"os"
 )
 
 type GroupService struct {
@@ -34,7 +33,6 @@ func main() {
 		log.Fatalln(err)
 	}
 	log.Println("Server Started")
-	go http.Serve(l, nil); err != nil {
-	
+	go http.Serve(l, nil)
 
 }
