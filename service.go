@@ -33,6 +33,6 @@ func main() {
 		log.Fatalln(err)
 	}
 	log.Println("Server Started")
-	go http.Serve(l, nil)
+	http.Serve(l, nil)
 
 }
